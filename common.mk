@@ -314,6 +314,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
+    TouchGestures \
     vendor.lineage.touch-service.oplus
 
 # Update engine

@@ -17,5 +17,16 @@
     <string name="config_cpu_temp_path">/sys/class/thermal/thermal_zone0/temp</string>
     <integer name="config_sysCPUTempMultiplier">1000</integer>
     <integer name="config_sysBatteryTempMultiplier">1</integer>
-    
+
+    <!-- Paths to the libraries that contain device specific key handlers -->
+    <string-array name="config_deviceKeyHandlerLibs" translatable="false">
+        <item>/system_ext/app/KeyHandler/KeyHandler.apk</item>
+        <item>/system/system_ext/priv-app/TouchGestures/TouchGestures.apk</item>
+    </string-array>
+
+    <!-- Names of the key handler classes -->
+    <string-array name="config_deviceKeyHandlerClasses" translatable="false">
+        <item>org.lineageos.settings.device.KeyHandler</item>
+        <item>com.android.touch.gestures.KeyHandler</item>
+    </string-array>
 </resources>
