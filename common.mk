@@ -190,8 +190,9 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.qti.kernel.rc \
     init.target.rc \
-    ueventd.oplus.rc \
     ueventd.qcom.rc
+#    ueventd.oplus.rc
+
 
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_oplus)
 
