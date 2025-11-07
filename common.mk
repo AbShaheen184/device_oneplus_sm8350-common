@@ -191,7 +191,7 @@ PRODUCT_PACKAGES += \
     init.qti.kernel.rc \
     init.target.rc \
     ueventd.qcom.rc
-#    ueventd.oplus.rc
+    ueventd.oplus.rc
 
 
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_oplus)
@@ -215,8 +215,7 @@ $(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage \
-    $(LOCAL_PATH)/overlay-voltage
+    $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
