@@ -405,3 +405,6 @@ $(call inherit-product, vendor/oneplus/sm8350-common/sm8350-common-vendor.mk)
 
 # Dolby
 $(call inherit-product, vendor/oneplus/dolby/dolby.mk)
+
+# Camera
+$(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
